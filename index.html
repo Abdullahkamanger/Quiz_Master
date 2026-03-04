@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz_Master</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+        index.html: simple static shell for the Quiz_Master app.
+        The page contains three modals (category list, quiz questions,
+        and score) which are populated and shown/hidden by script.js.
+        No behavior is implemented here — it is all in the script.
+    -->
+    <meta name="description"
+        content="Quiz_Master is a web application that allows users to create and take quizzes on various topics. It provides an interactive platform for learning and testing knowledge.">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <h1>Quiz_Master</h1>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="quiz-topic-wrapper-grid">
+        <div class="quiz-topic-card" topic_id="1">
+            <h2>General Knowledge</h2>
+            <p>Test your general knowledge with a variety of questions on different topics.</p>
+            <button class="start-quiz-btn" quiz_id="1">Start Quiz</button>
+        </div>
+        <!-- //////// -->
+        <div class="quiz-topic-card" topic_id="2">
+            <h2>Science</h2>
+            <p>Challenge yourself with questions about physics, chemistry, biology, and more.</p>
+            <button class="start-quiz-btn" quiz_id="2">Start Quiz</button>
+        </div>
+        <!-- //////// -->
+        <div class="quiz-topic-card" topic_id="3">
+            <h2>Coding</h2>
+            <p>Challenge yourself with questions about programming, algorithms, and software development.</p>
+            <button class="start-quiz-btn" quiz_id="3">Start Quiz</button>
+        </div>
+        <!-- //////// -->
+        <div class="quiz-topic-card" topic_id="4">
+            <h2>HTML</h2>
+            <p>Challenge yourself with questions about HTML, CSS, JavaScript, and more.</p>
+            <button class="start-quiz-btn" quiz_id="4">Start Quiz</button>
+        </div>
+        <!-- //////// -->
+        <div class="quiz-topic-card" topic_id="5">
+            <h2>CSS</h2>
+            <p>Challenge yourself with questions about CSS, styling, and layout design.</p>
+            <button class="start-quiz-btn" quiz_id="5">Start Quiz</button>
+        </div>
+        <!-- //////// -->
+        <div class="quiz-topic-card" topic_id="6">
+            <h2>JS</h2>
+            <p>Challenge yourself with questions about JavaScript, DOM manipulation, and more.</p>
+            <button class="start-quiz-btn" quiz_id="6">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="quiz-model-info">
+        <div class="quiz-model-content">
+            <span class="close-btn">&times;</span>
+            <h2>Quiz Title</h2>
+            <p>Quiz description goes here. This is where you can provide details about the quiz and what to expect.</p>
+            <button class="start-quiz-btn" quiz_id="7">Start Quiz</button>
+        </div>
+
+    </div>
+
+    <div class="quiz-questions-model">
+        <div class="quiz-questions-content">
+            <h1 class="quiz-time">1:00</h1>
+            <span class="close-btn">&times;</span>
+            <h2>Question 1</h2>
+            <p>What is the capital of France?</p>
+            <ul class="options-list">
+                <li><input type="radio" name="option" id="option1"><label for="option1">Berlin</label></li>
+                <li><input type="radio" name="option" id="option2"><label for="option2">Madrid</label></li>
+                <li><input type="radio" name="option" id="option3"><label for="option3">Paris</label></li>
+                <li><input type="radio" name="option" id="option4"><label for="option4">Rome</label></li>
+            </ul>
+            <button class="submit-answer-btn">Submit Answer</button>
+        </div>
+
+    </div>
+
+    <div class="score-model">
+        <div class="score-model-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Score</h2>
+            <p>You scored 8 out of 10!</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
